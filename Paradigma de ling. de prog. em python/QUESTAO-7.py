@@ -1,0 +1,6 @@
+a= int(input("digite um valor: "))
+b= int(input("digite um valor: "))
+r=((a % 2 == 1) and (b % 2 == 0))
+p=((a % 2 == 0) and (b % 2 == 1))
+o=(r or p)
+print(o)

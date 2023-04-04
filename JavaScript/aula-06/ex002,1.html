@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Primeiros Passos</title>
+    <style>
+        body {
+            background-color: rgb(54, 36, 174);
+            color: white;
+            font: normal 15pt arial;
+        }
+        h1{
+            color: rgb(237, 10, 10);
+        }
+        /*  comentario em css */
+    </style>
+</head>
+<body>
+    <h1>Ola, Mundo!</h1>
+    <p> ja me livrei da maldicao </p> <!--comentario em html-->
+    <script>
+         var nome = window.prompt('informe seu nome?')  // para perguntar o nome.
+         window.alert(' Seja Bem-Vindo, '+ nome + ' !') // o + serve para concatenacao das variaveis.
+         var n1 = Number(window.prompt(nome + ', digite um numero: ')) // Foi feita a conversao de string para numero inteiro
+         var n2 = Number.parseFloat(window.prompt('legal ,agora digite outro numero: '))// foi feita a conversao de string para numero real
+         // O parsefloat e para converter em numero real.
+         // O parseInt e para converter em numero inteiro.
+         var s = n1 + n2
+         // window.alert('a soma desses numeros e ' + string(s)) // usando concatenaçao
+         window.alert(` a soma entre ${n1} e ${n2} é igual a ${s}`) // usando templete string
+         // o  JavaScript nao faz  interpolação.
+         //  tem que usar a conversao para ->(number + number) fazer adicao.
+         // (string + string) faz concatenacao.
+    </script>
+</body>
+</html>
